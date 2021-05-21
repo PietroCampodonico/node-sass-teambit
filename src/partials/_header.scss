@@ -5,6 +5,8 @@ nav {
     justify-content: space-between;
     border-bottom: 1px solid $brown_color;
     padding-bottom: 10px;
+    font-size: $font_size;
+
 }
 
 .logo-container {
@@ -17,6 +19,8 @@ nav {
 button{
     @include flex_align_center;
     @include button_default;
+    font-size: $font_size;
+
     span {
         text-decoration-color: $btn_blue_color;
     }

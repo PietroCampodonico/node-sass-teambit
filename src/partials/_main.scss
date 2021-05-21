@@ -1,0 +1,20 @@
+//SECTION: .FIRST
+.first {
+    h1, h4, .button-container {
+        margin: 10px 0;
+    }
+
+    .button-container {
+    
+        @include flex_align_center;
+        span {
+            margin: 5px;
+        }
+
+        button {
+            color: white;
+            background-color: $btn_blue_color;
+            padding: 0 5px;
+        }
+    }
+}
