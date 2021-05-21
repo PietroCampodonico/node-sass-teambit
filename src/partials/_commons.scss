@@ -51,6 +51,7 @@ ul {
 }
 
 section {
+    padding: $spacing 0;
     display: $disp_flex;
 }
 
@@ -58,3 +59,8 @@ img {
     object-fit: contain;
     width: 100%;
 }
+
+.salmon-bg {
+    background-color: $salmon_background_color;
+}
+

@@ -1,3 +1,7 @@
+.row {
+    display: $disp_flex;
+}
+
 //SECTION: .FIRST
 .first {
     h1, h4, .button-container {
@@ -16,5 +20,22 @@
             background-color: $btn_blue_color;
             padding: 0 5px;
         }
+    }
+}
+
+//SECTION .SECOND 
+
+.second {
+    text-align: center;
+    flex-direction: column;
+    border-bottom: 1px solid $brown_color;
+    [class^="col-4"], .offset-4 {
+        width: 33%;
+    }
+    .img-container {
+        padding: 40px 100px;
+    }
+    .bottom {
+        margin-bottom: $spacing;
     }
 }
