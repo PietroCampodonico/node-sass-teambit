@@ -33,17 +33,21 @@
 
 .second {
     border-bottom: 1px solid $brown_color;
+    h3 {
+        margin-bottom: $spacing;
+    }
+}
+
+.third {
+    & > h3 {
+        margin: $spacing 0;
+    }
 }
 
 .second, .third {
     padding: ($spacing*2) 0;
     text-align: center;
     flex-direction: column;
-
-    h3 {
-        margin: $spacing 0;
-    }
-
 
     .img-container {
         img {
@@ -54,10 +58,6 @@
     .bottom {
         img {
             max-height: 300px;
-        }
-
-        h3 {
-            margin: 0;
         }
     }
 }
