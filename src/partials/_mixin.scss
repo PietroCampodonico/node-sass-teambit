@@ -1,0 +1,30 @@
+@mixin list_horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin list_reset {
+    margin-left: 0;
+    list-style: none;
+   @include list_horizontal;
+} 
+
+@mixin button_default {
+    color: $btn_blue_color;
+    border: 1px solid $btn_blue_color;
+    background-color: transparent;
+    padding: 10px;
+    transition: color $transition_duration;
+    border-radius: 4px;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+@mixin flex_align_center {
+    display: $disp_flex;
+    align-items: center;
+}

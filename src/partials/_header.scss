@@ -1,0 +1,33 @@
+//Provare Lighten o darken sui link
+
+nav {
+    display: $disp_flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $brown_color;
+    padding-bottom: 10px;
+}
+
+.logo-container {
+    @include flex_align_center;
+    span {
+        margin-left: 5px;
+    }
+}
+
+button{
+    @include flex_align_center;
+    @include button_default;
+    span {
+        text-decoration-color: $btn_blue_color;
+    }
+
+    .icon-container {
+        width: 18px;
+        margin-right: 5px;
+        @include flex_align_center;
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+}
