@@ -2,6 +2,13 @@
     display: $disp_flex;
 }
 
+.col-4, .offset-4 {
+    width: 33%;
+    img, p {
+        margin-bottom: $spacing;
+    }
+}
+
 //SECTION: .FIRST
 .first {
     h1, h4, .button-container {
@@ -9,7 +16,6 @@
     }
 
     .button-container {
-    
         @include flex_align_center;
         span {
             margin: 5px;
@@ -23,19 +29,36 @@
     }
 }
 
-//SECTION .SECOND 
+//SECTION .SECOND & .THIRD
 
 .second {
+    border-bottom: 1px solid $brown_color;
+}
+
+.second, .third {
+    padding: ($spacing*2) 0;
     text-align: center;
     flex-direction: column;
-    border-bottom: 1px solid $brown_color;
-    [class^="col-4"], .offset-4 {
-        width: 33%;
+
+    h3 {
+        margin: $spacing 0;
     }
+
+
     .img-container {
-        padding: 40px 100px;
+        img {
+            max-height: 100px;
+        }
     }
+
     .bottom {
-        margin-bottom: $spacing;
+        img {
+            max-height: 300px;
+        }
+
+        h3 {
+            margin: 0;
+        }
     }
 }
+
