@@ -1,0 +1,32 @@
+//Rows, cols and offsets rules
+
+.row {
+    display: $disp_flex;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-8 {
+    width: calc((100% / 3)*2);
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4, .offset-4 {
+    width: 33%;
+    img, p {
+        margin-bottom: $spacing;
+    }
+}
+
+.col-3 {
+    width: calc(100% / 3);
+}
+
+.offset-2 {
+    width: calc(100% / 6);
+}

@@ -58,10 +58,6 @@ h1 {
     font-size: 2rem;
 }
 
-.salmon-bg {
-    background-color: $salmon_background_color;
-}
-
 .logo-container {
     @include flex_align_center;
     img {

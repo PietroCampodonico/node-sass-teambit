@@ -1,36 +1,3 @@
-//Rows, cols and offsets rules
-
-.row {
-    display: $disp_flex;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-8 {
-    width: calc((100% / 3)*2);
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-4, .offset-4 {
-    width: 33%;
-    img, p {
-        margin-bottom: $spacing;
-    }
-}
-
-.col-3 {
-    width: calc(100% / 3);
-}
-
-.offset-2 {
-    width: calc(100% / 6);
-}
-
 //Main common rules
 
 section a {
@@ -48,6 +15,10 @@ section a {
         background-color: $btn_blue_color;
         padding: 0 5px;
     }
+}
+
+.colored-bg {
+    background-color: $section_background_color;
 }
 
 //SECTION: .FIRST
