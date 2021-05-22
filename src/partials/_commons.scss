@@ -31,13 +31,7 @@ a {
 }
 
 ul {
-    
     @include list_reset;
-    
-    li {
-        padding: 0 15px;
-        @include list_horizontal;
-    }
 }
 
 [class^="col-"] {
@@ -60,7 +54,17 @@ img {
     width: 100%;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 .salmon-bg {
     background-color: $salmon_background_color;
 }
 
+.logo-container {
+    @include flex_align_center;
+    img {
+        max-height: 75px;
+    }
+}

@@ -7,7 +7,7 @@
 @mixin list_reset {
     margin-left: 0;
     list-style: none;
-   @include list_horizontal;
+//    @include list_horizontal;
 } 
 
 @mixin button_default {
@@ -27,4 +27,14 @@
 @mixin flex_align_center {
     display: $disp_flex;
     align-items: center;
+}
+
+@mixin flex_dir_col {
+    flex-direction: column;
+    display: flex;
+}
+
+@mixin bigger_logo {
+    max-height: 35px;
+    max-width: 35px;
 }

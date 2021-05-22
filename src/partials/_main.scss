@@ -1,5 +1,19 @@
+//Rows, cols and offsets rules
+
 .row {
     display: $disp_flex;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-8 {
+    width: calc((100% / 3)*2);
+}
+
+.col-6 {
+    width: 50%;
 }
 
 .col-4, .offset-4 {
@@ -9,23 +23,37 @@
     }
 }
 
+.col-3 {
+    width: calc(100% / 3);
+}
+
+.offset-2 {
+    width: calc(100% / 6);
+}
+
+//Main common rules
+
+section a {
+    color: $btn_blue_color;
+}
+
+.button-container {
+    @include flex_align_center;
+    span {
+        margin: 5px;
+    }
+
+    button {
+        color: white;
+        background-color: $btn_blue_color;
+        padding: 0 5px;
+    }
+}
+
 //SECTION: .FIRST
 .first {
     h1, h4, .button-container {
         margin: 10px 0;
-    }
-
-    .button-container {
-        @include flex_align_center;
-        span {
-            margin: 5px;
-        }
-
-        button {
-            color: white;
-            background-color: $btn_blue_color;
-            padding: 0 5px;
-        }
     }
 }
 
@@ -47,7 +75,7 @@
 .second, .third {
     padding: ($spacing*2) 0;
     text-align: center;
-    flex-direction: column;
+    @include flex-dir_col;
 
     .img-container {
         img {
@@ -57,8 +85,65 @@
 
     .bottom {
         img {
-            max-height: 300px;
+            max-height: $secondary_img;
         }
     }
 }
+
+//.SECTION .FOURTH
+.fourth {
+    @include flex-dir_col;
+    &>div {
+        display: $disp_flex;
+    }
+
+    [class^="col-"] * {
+        margin-bottom: $spacing;
+    }
+
+    .col-4 {
+        img{
+            margin-top: $spacing;
+            max-height: $secondary_img;
+        }
+    }
+}
+
+.fifth {
+    @include flex-dir_col;
+    @include flex_align_center;
+    h1, .col-8 > p {
+        margin: ($spacing / 2) 0;
+    }
+
+    span {
+        vertical-align: middle;
+    }
+
+    img{
+        @include bigger_logo
+    }
+
+    .col-8{
+        background-color: white;
+        border: 1px solid $btn_blue_color;
+        border-radius: 10px;
+        padding: $spacing/2 $spacing;
+        img {
+            margin-right: 5px;
+        }
+        div {
+            @include flex_align_center;
+            *{
+                line-height: 1em;
+            }
+        }
+    }
+
+    .button-container {
+        margin: $spacing 0;
+    }
+}
+
+
 

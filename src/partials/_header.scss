@@ -7,12 +7,11 @@ nav {
     padding-bottom: 10px;
     font-size: $font_size;
 
-}
-
-.logo-container {
-    @include flex_align_center;
-    span {
-        margin-left: 5px;
+    ul {
+        @include list_horizontal;
+        li {
+            padding: 0 15px;
+        }
     }
 }
 
@@ -20,10 +19,6 @@ button{
     @include flex_align_center;
     @include button_default;
     font-size: $font_size;
-
-    span {
-        text-decoration-color: $btn_blue_color;
-    }
 
     .icon-container {
         width: 18px;

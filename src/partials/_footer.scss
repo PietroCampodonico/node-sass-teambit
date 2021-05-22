@@ -1,0 +1,25 @@
+footer {
+    .wrapper, [class^="col-"] {
+        display: $disp_flex;
+    }
+}
+
+.left {
+    a {
+        color: $btn_blue_color;
+    }
+    
+}
+
+.right {
+    justify-content: flex-end;
+    ul {
+        @include flex-dir_col;
+        margin: 0 $spacing;
+
+        li {
+            padding: ($spacing/6) 0;
+            font-size: $font_size * 0.8;
+        }
+    }
+}
