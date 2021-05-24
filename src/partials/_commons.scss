@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: $brown_color;
+    color: $font_color;
 }
 
 button {
@@ -24,7 +24,7 @@ button {
 
 a {
     text-decoration: none;
-    color: $brown_color;
+    color: $font_color;
     &:hover {
         text-decoration: underline;
     }
@@ -61,6 +61,7 @@ h1 {
 .logo-container {
     @include flex_align_center;
     img {
-        max-height: 75px;
+        max-width: 125px;
+        margin-right: $spacing / 2;
     }
 }
