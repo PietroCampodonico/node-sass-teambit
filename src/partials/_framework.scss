@@ -12,7 +12,6 @@
     .offset-#{$i} {
         width: calc((100% / 12) * #{$i});
     }
-
 }
 
 .col-4, .offset-4 {
